@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta class="keywords" content="HTML, CSS. Javascript">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.1.7/css/fork-awesome.min.css" integrity="sha256-gsmEoJAws/Kd3CjuOQzLie5Q3yshhvmo7YNtBG7aaEY=" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Oswald" />
+  <link rel="stylesheet" href="styles.css">
+  <title>Currency Converter</title>
+</head>
+<body>
+            <h1>
+                Currency Converter
+            </h1>
+              <label for="currency-select">Start Currency:</label>
+              <select id="start">
+                  <option value="">--Please choose an option--</option>
+                  <option value="usd">USD</option>
+                  <option value="vnd">VND</option>
+                  <option value="krw">KRW</option>
+                  <option value="idr">IDR</option>
+                  <option value="eur">EUR</option>
+              </select>
+            
+              <label for="currency-select">End Currency:</label>
+              <select id="end">
+                  <option value="">--Please choose an option--</option>
+                  <option value="usd">USD</option>
+                  <option value="vnd">VND</option>
+                  <option value="krw">KRW</option>
+                  <option value="idr">IDR</option>
+                  <option value="eur">EUR</option>
+              </select>
+              <div><input type="text" id="amountInput"/>
+              <button onclick="convertCurrency()">
+                Convert Currency
+              </button>
+            </div>
+    <span id="result"></span>
+  <script src="scripts.js"></script>
+</body>
+</html>
